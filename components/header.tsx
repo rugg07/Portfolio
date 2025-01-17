@@ -20,7 +20,7 @@ export default function Header() {
   const pathname = usePathname()
 
   const handleResumeClick = () => {
-    window.open('/your-resume.pdf', '_blank')
+    window.open('/Resume.pdf', '_blank')
   }
 
   return (
@@ -28,7 +28,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 md:px-8 lg:px-12">
         <Link href="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
-            YourName
+            Hrugved Pawar
           </span>
         </Link>
 

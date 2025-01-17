@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 interface ProjectCardProps {
   title: string
   description: string
-  date: string
+  // date: string
   image: string
   technologies: string[]
   websiteUrl?: string
@@ -21,7 +21,7 @@ interface ProjectCardProps {
 export function ProjectCard({
   title,
   description,
-  date,
+  // date,
   image,
   technologies,
   websiteUrl,
@@ -35,15 +35,16 @@ export function ProjectCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
+      className="h-full"
     >
       <Card 
-        className="overflow-hidden bg-card hover:border-purple-500/50 transition-all duration-300"
+        className="overflow-hidden bg-card hover:border-purple-500/50 transition-all duration-300 h-full flex flex-col"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="relative aspect-video overflow-hidden">
+        <div className="relative h-[250px] overflow-hidden">
           <Image
-            src={image}
+            src={image || "/placeholder.svg"}
             alt={title}
             fill
             className="object-cover transition-transform duration-300"
@@ -52,14 +53,14 @@ export function ProjectCard({
             }}
           />
         </div>
-        <CardContent className="p-6">
-          <div className="space-y-4">
-            <div>
+        <CardContent className="flex flex-col flex-grow p-6">
+          <div className="flex-grow">
+            <div className="mb-4">
               <h3 className="font-bold text-xl mb-1">{title}</h3>
-              <p className="text-sm text-muted-foreground">{date}</p>
+              {/* <p className="text-sm text-muted-foreground">{date}</p> */}
             </div>
-            <p className="text-muted-foreground">{description}</p>
-            <div className="flex flex-wrap gap-2">
+            <p className="text-muted-foreground mb-4">{description}</p>
+            <div className="flex flex-wrap gap-2 mb-6">
               {technologies.map((tech) => (
                 <span
                   key={tech}
@@ -69,24 +70,24 @@ export function ProjectCard({
                 </span>
               ))}
             </div>
-            <div className="flex gap-3 pt-4">
-              {websiteUrl && (
-                <Button asChild className="flex-1">
-                  <Link href={websiteUrl} target="_blank">
-                    <Globe className="mr-2 h-4 w-4" />
-                    Website
-                  </Link>
-                </Button>
-              )}
-              {githubUrl && (
-                <Button asChild variant="outline">
-                  <Link href={githubUrl} target="_blank">
-                    <Github className="mr-2 h-4 w-4" />
-                    Source
-                  </Link>
-                </Button>
-              )}
-            </div>
+          </div>
+          <div className="flex gap-3 mt-auto">
+            {websiteUrl && (
+              <Button asChild className="flex-1 bg-purple-600 hover:bg-purple-500">
+                <Link href={websiteUrl} target="_blank">
+                  <Globe className="mr-2 h-4 w-4" />
+                  Website
+                </Link>
+              </Button>
+            )}
+            {githubUrl && (
+              <Button asChild variant="outline" className="flex-1">
+                <Link href={githubUrl} target="_blank">
+                  <Github className="mr-2 h-4 w-4" />
+                  Source
+                </Link>
+              </Button>
+            )}
           </div>
         </CardContent>
       </Card>

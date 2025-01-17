@@ -2,59 +2,57 @@ import { ProjectCard } from '@/components/project-card'
 
 const projects = [
   {
-    title: "Chat Collect",
-    description: "A SaaS platform that allows users to collect email addresses from their GPT users. Built with Next.js and PostgreSQL.",
-    date: "Jan 2024 - Feb 2024",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "Clarity",
+    description: "A SaaS platform that allows developers to be on top of their productivity with AI assisted interaction with their Github repository and meeting analysis.",
+    // date: "December 2024 - January 2025",
+    image: "/Clarity-base.png",
+    technologies: ["Next.js", "TypeScript", "PostgresDB - NeonDB", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI", "zod", "LangChain - RAG", "GeminiAPI", "Stripe", "Firebase", "Clerk"],
+    websiteUrl: "https://clarity-mu-five.vercel.app/",
+    githubUrl: "https://github.com/rugg07/Clarity"
   },
   {
-    title: "Magic UI",
-    description: "Designed, developed and sold animated UI components for developers.",
-    date: "June 2023 - Present",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS", "Magic UI"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "VocabVenture",
+    description: "Language learning SaaS platform that helps users and even kids learn new languages through interactive games, challenges and levels.",
+    // date: "August 2024 - Dec 2024",
+    image: "/VocabVenture.png",
+    technologies: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI", "Clerk", "DrizzleORM", "PostgresDB - NeonDB", "Vercel", "Stripe", "React Admin"],
+    websiteUrl: "https://vocab-ventures.vercel.app/"
   },
   {
-    title: "llm.report",
-    description: "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-    date: "April 2023 - September 2023",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS", "Cloudflare Workers"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "Cryptocurrency Platform",
+    description: "Exchange Ether across various accounts and wallets.",
+    // date: "January 2023 - May 2024",
+    image: "/Web3.0.png",
+    technologies: ["Next.js", "Javascript", "TailwindCSS", "Solidity", "MetaMask", "GiphyAPI"],
+    githubUrl: "https://github.com/rugg07/Web3.0-Final"
   },
   {
-    title: "Automatic Chat",
-    description: "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-    date: "April 2023 - March 2024",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS", "OpenAI"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "Netflix Clone",
+    description: "Netflix replica. Users can view trailers, search for movies, and watch trailers.",
+    // date: "Jan 2022 - May 2022",
+    image: "/Netflix-base.png",
+    technologies: ["React", "Redux", "TypeScript", "Cloudflare", "Firebase", "TMDB API", "TailwindCSS", "Stripe", "Stripe Checkout & Webhooks", "Redux", "Firestore", "Google Auth"],
+    websiteUrl: "https://netflix-clone-rugg.web.app/",
+    githubUrl: "https://github.com/rugg07/Netflix-clone"
   },
   {
-    title: "Portfolio v2",
-    description: "My personal portfolio website built with Next.js and TailwindCSS. Features dark mode, animations, and responsive design.",
-    date: "March 2024",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "LinkedIn Clone",
+    description: "LinkedIn replica. Users can view profiles, post updates, and connect with other users.",
+    // date: "Jan 2022 - May 2022",
+    image: "/Linkedin.png",
+    technologies: ["Next.js", "TypeScript", "Firebase", "TailwindCSS", "Firestore", "Google Auth"],
+    websiteUrl: "https://linkedin-clone-rugg-d55c2.web.app/",
+    githubUrl: "https://github.com/rugg07/linkedin-clone"
   },
   {
-    title: "Dev Blog",
-    description: "A technical blog where I share my experiences and learnings in web development, cloud computing, and AI.",
-    date: "2023 - Present",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "MDX", "TailwindCSS", "Vercel"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
-  }
+    title: "Airbnb Clone",
+    description: "Airbnb replica. Users can view listings, book stays, and leave reviews.",
+    // date: "Jan 2022 - May 2022",
+    image: "/Airbnb.png",
+    technologies: ["Next.js", "Javascript", "TailwindCSS", "googlMapsAPI"],
+    websiteUrl: "https://airbnb-clone-rugg07.vercel.app/",
+    githubUrl: "https://github.com/rugg07/airbnb-clone"
+  },
 ]
 
 export default function ProjectsPage() {

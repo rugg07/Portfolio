@@ -2,10 +2,9 @@ import Link from 'next/link'
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react'
 
 const socialLinks = [
-  { href: 'https://github.com/yourusername', icon: Github, label: 'GitHub' },
-  { href: 'https://twitter.com/yourusername', icon: Twitter, label: 'Twitter' },
-  { href: 'https://linkedin.com/in/yourusername', icon: Linkedin, label: 'LinkedIn' },
-  { href: 'mailto:your@email.com', icon: Mail, label: 'Email' },
+  { href: 'https://github.com/rugg07', icon: Github, label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/hrugved-pawar/', icon: Linkedin, label: 'LinkedIn' },
+  { href: 'mailto:hpawar@umd.edu', icon: Mail, label: 'Email' },
 ]
 
 export default function Footer() {
@@ -14,7 +13,7 @@ export default function Footer() {
       <div className="container px-4 md:px-8 lg:px-12 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            Let's connect!
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (

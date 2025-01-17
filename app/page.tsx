@@ -3,35 +3,36 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Github, Twitter, Linkedin } from 'lucide-react'
 import { ProjectCard } from '@/components/project-card'
+import { SkillsSection } from '@/components/skills-section'
+
 
 // Use the first 3 projects from the projects array
 const featuredProjects = [
   {
-    title: "Chat Collect",
-    description: "A SaaS platform that allows users to collect email addresses from their GPT users.",
-    date: "Jan 2024 - Feb 2024",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "Clarity",
+    description: "A platform that allows developers to be on top of their productivity.",
+    // date: "Dec 2024 - Jan 2025",
+    image: "/Clarity-base.png",
+    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS", "Stripe", "Shadcn UI", "Magic UI", "zod", "LangChain - RAG", "GeminiAPI", "Stripe", "Firebase"],
+    websiteUrl: "https://clarity-mu-five.vercel.app/",
+    githubUrl: "https://github.com/rugg07/Clarity"
   },
   {
-    title: "Magic UI",
-    description: "Designed, developed and sold animated UI components for developers.",
-    date: "June 2023 - Present",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "TailwindCSS"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "Cryptocurrency Platform",
+    description: "Exchange Ether across various accounts and wallets.",
+    // date: "Jan 2023 - May 2024",
+    image: "/Web3.0.png",
+    technologies: ["Next.js", "Javascript", "TailwindCSS", "Solidity", "MetaMask", "GiphyAPI"],
+    githubUrl: "https://github.com/rugg07/Web3.0-Final"
   },
   {
-    title: "llm.report",
-    description: "An open-source logging and analytics platform for OpenAI.",
-    date: "April 2023 - September 2023",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CZKypdcjLGzu38p8mjaa508AtTCTHD.png",
-    technologies: ["Next.js", "TypeScript", "Cloudflare"],
-    websiteUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project"
+    title: "Netflix Clone",
+    description: "Netflix replica. Users can view trailers, search for movies, and watch trailers.",
+    // date: "Jan 2022 - May 2022",
+    image: "/Netflix-base.png",
+    technologies: ["React", "Redux", "TypeScript", "Cloudflare", "Firebase", "TMDB API", "TailwindCSS", "Stripe", "Stripe Checkout & Webhooks", "Redux", "Firestore", "Google Auth"],
+    websiteUrl: "https://netflix-clone-rugg.web.app/",
+    githubUrl: "https://github.com/rugg07/Netflix-clone"
   }
 ]
 
@@ -61,28 +62,21 @@ export default function Home() {
                 <Button asChild variant="outline">
                   <Link href="https://github.com/yourusername" target="_blank">
                     <Github className="mr-2 h-4 w-4" />
-                    GitHub
+                    rugg07
                   </Link>
                 </Button>
               </div>
               <div className="flex gap-6">
                 <Link 
-                  href="https://github.com/yourusername" 
-                  target="_blank"
+                  href="https://github.com/rugg07" 
+                  target="rugg07"
                   className="text-foreground/60 hover:text-foreground transition-colors"
                 >
                   <Github className="h-6 w-6" />
                 </Link>
                 <Link 
-                  href="https://twitter.com/yourusername" 
-                  target="_blank"
-                  className="text-foreground/60 hover:text-foreground transition-colors"
-                >
-                  <Twitter className="h-6 w-6" />
-                </Link>
-                <Link 
-                  href="https://linkedin.com/in/yourusername" 
-                  target="_blank"
+                  href="https://www.linkedin.com/in/hrugved-pawar/" 
+                  target="hrugved-pawar"
                   className="text-foreground/60 hover:text-foreground transition-colors"
                 >
                   <Linkedin className="h-6 w-6" />
@@ -92,7 +86,7 @@ export default function Home() {
             <div className="relative aspect-square w-full max-w-[400px] mx-auto lg:mx-0">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 blur-3xl opacity-20 animate-pulse" />
               <Image
-                src="/placeholder.svg"
+                src="/Profile.jpeg"
                 alt="Profile"
                 fill
                 className="object-cover rounded-full border-2 border-border"
@@ -124,6 +118,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SkillsSection />
     </div>
   )
 }
