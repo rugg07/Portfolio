@@ -41,7 +41,7 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="min-h-[calc(100vh-4rem)] flex items-center w-full">
-        <div className="container px-4 md:px-8 lg:px-12">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center">
             <div className="flex flex-col gap-8">
               <div className="space-y-4">
@@ -99,7 +99,7 @@ export default function Home() {
 
       {/* Featured Projects Section */}
       <section id="projects" className="w-full py-24 lg:py-32 bg-muted/50">
-        <div className="container px-4 md:px-8 lg:px-12">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
           <div className="flex flex-col items-center text-center mb-12 md:mb-16">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Featured Projects
@@ -118,7 +118,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <SkillsSection />
+      <section className="min-h-[calc(100vh-4rem)] flex items-center w-full">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
+          <SkillsSection />
+        </div>
+      </section>
+      
     </div>
   )
 }

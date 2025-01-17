@@ -167,7 +167,7 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen py-24 lg:py-32">
-      <div className="container px-4 md:px-8 lg:px-12">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <div className="max-w-3xl mx-auto space-y-16">
           <section>
             <h2 className="text-3xl font-bold tracking-tighter mb-8">
